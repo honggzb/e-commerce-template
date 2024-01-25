@@ -78,8 +78,8 @@ const Signin = () => {
               otherProps={{ name:'password', value: password, type:'password', required: 'required '}} 
               handleChange={e => setPassword(e.target.value)} />
               <div className="buttons">
-                  <CustomButton type='submit'> Sign in </CustomButton> 
-                  <CustomButton onClick={onClick} isGoogleSignIn> Sign in with Google</CustomButton> 
+                  <CustomButton inverted={false} type='submit'> Sign in </CustomButton> 
+                  <CustomButton inverted={false}  onClick={onClick} isGoogleSignIn> Sign in with Google</CustomButton> 
               </div>
         </form>
     </div>

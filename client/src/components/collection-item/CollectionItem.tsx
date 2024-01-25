@@ -4,7 +4,7 @@ import './CollectionItem.scss';
 import { addItem } from "../../store/cart.slice";
 
 const CollectionItem = ({ ...item }) => {
-  const  { id, name, price, imageUrl } = item;
+  const  { name, price, imageUrl } = item;
   const dispatch = useDispatch();
 
   const onClick = () => {
@@ -18,7 +18,7 @@ const CollectionItem = ({ ...item }) => {
             <span className="name">{name}</span>
             <span className="price">${price}</span>
         </div>
-        <CustomButton inverted onClick={onClick}>
+        <CustomButton inverted={true} onClick={onClick}>
           Add to cart
         </CustomButton>
     </div>

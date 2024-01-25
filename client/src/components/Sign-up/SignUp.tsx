@@ -55,7 +55,7 @@ const SignUp = () => {
               label={'Confirm Password'} 
               otherProps={{ name:'confirmPassword', value: confirmPassword, type:'password', required: 'required '}} 
               handleChange={e => setConfirmPassword(e.target.value)} />
-            <CustomButton type='submit'> Sign Up </CustomButton> 
+            <CustomButton inverted={false} type='submit'> Sign Up </CustomButton> 
         </form>
     </div>
   )

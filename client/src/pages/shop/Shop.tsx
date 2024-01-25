@@ -2,6 +2,7 @@ import { useParams  } from 'react-router-dom'
 import CollectionItem from '../../components/collection-item/CollectionItem';
 import { SHOP_DATA } from '../../constants/fake-shop-data';
 import './Shop.scss';
+import { useEffect } from 'react';
 
 const Shop = () => {
   const category = useParams();
@@ -19,3 +20,4 @@ const Shop = () => {
   }
 
   export default Shop;
+ 
